@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    <RelativeLayout android:id="@+id/head_tip" style="@style/head_tip">
+      <TextView style="@style/head_tip_text"
+      android:text="@string/today_consume"
+      ></TextView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/menu_top" style="@style/menu_top" android:layout_below="@+id/head_tip"
+     >
+    <TextView style="@style/list_item_today" android:text="@string/menu_date" android:id="@id/view_time" android:layout_width="100.0dip"  android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView style="@style/list_item_today" android:text="@string/menu_price" android:id="@id/view_amount" android:layout_width="120.0dip" android:layout_marginLeft="@dimen/space_20" android:layout_toRightOf="@id/view_time" />
+    <!--<TextView style="@style/list_item_today" android:text="@string/menu_project" android:id="@id/view_type" android:layout_width="70.0dip"  android:layout_toRightOf="@id/view_amount" /> -->
+    <TextView style="@style/list_item_today" android:text="@string/menu_note" android:id="@id/view_desc"   android:layout_toRightOf="@id/view_amount" />
+</RelativeLayout>
+  <View android:id="@+id/viewLine" android:layout_below="@+id/menu_top" style="@style/baseline" ></View>
+  <ListView android:id="@+id/todaylistview"
+      style="@style/list_view_today"
+      android:layout_below="@+id/viewLine"
+      >
+  </ListView>
+</RelativeLayout>

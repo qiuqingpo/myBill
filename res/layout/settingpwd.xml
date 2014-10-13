@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/set_pwdopen" android:background="@drawable/common_strip_setting_top" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginTop="@dimen/space_15">
+         <!--    <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_marginLeft="5dip"  android:background="@drawable/more_history" /> -->
+            <TextView android:text="@string/open_gusturepwd"  style="@style/B4_Font_white" android:paddingLeft="@dimen/space_0" />
+             <ImageView android:id="@+id/imgSetPwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:background="@drawable/btn_check_off_normal"  />
+        </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/set_pwd" android:background="@drawable/common_strip_setting_middle" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+<!--             <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_marginLeft="5dip" android:background="@drawable/setting_pwd" /> -->
+            <TextView  android:text="@string/set_gusturepwd"  style="@style/B4_Font_white" android:paddingLeft="@dimen/space_0" />
+            <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:background="@drawable/set_jt" />
+        </RelativeLayout>
+           <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/set_pwd_answer" android:background="@drawable/common_strip_setting_bottom" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+          <!--   <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"  android:layout_marginLeft="5dip" android:background="@drawable/setting_voice" /> -->
+           <TextView  android:text="@string/ans_gusturepic"  style="@style/B4_Font_white" android:paddingLeft="@dimen/space_0" />
+           <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:background="@drawable/set_jt" />
+        </RelativeLayout>
+</LinearLayout>

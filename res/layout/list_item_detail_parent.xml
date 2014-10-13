@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="5dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="5dip"
+    android:background="#e8e8e8"
+     >
+    <LinearLayout android:id="@+id/detail_month_lin"  android:layout_alignParentLeft="true" style="@style/list_item_detail_lin">
+    <TextView style="@style/list_item_today" android:textSize="@dimen/text_size_20"  android:id="@+id/view_month" android:layout_marginLeft="@dimen/space_5" />
+    <TextView style="@style/list_item_today" android:id="@id/view_time" android:textColor="@color/listitem_date" android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+     <LinearLayout android:id="@+id/detail_income_lin"  android:layout_toRightOf="@+id/detail_month_lin"  style="@style/list_item_detail_lin" android:layout_width="80dip" android:layout_marginLeft="@dimen/space_6"  >
+    <TextView style="@style/list_item_today"   android:id="@+id/view_income" android:layout_gravity="right"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/space_1" android:background="#ca8b84"></View> 
+    <TextView style="@style/list_item_today" android:text="@string/income" android:textColor="@color/listitem_date" android:textSize="@dimen/text_size_16" android:layout_gravity="right" />
+    </LinearLayout>
+    <LinearLayout   android:layout_toRightOf="@+id/detail_income_lin"  style="@style/list_item_detail_lin" android:layout_width="80dip" android:layout_marginLeft="@dimen/space_6" >
+    <TextView style="@style/list_item_today"  android:id="@+id/view_consume" android:layout_gravity="right"/>
+    <View android:layout_width="40dip"  android:layout_height="@dimen/space_1" android:background="#76b19b" android:layout_gravity="right"></View>
+    <TextView style="@style/list_item_today" android:text="@string/consume" android:textColor="@color/listitem_date" android:textSize="@dimen/text_size_16" android:layout_gravity="right"   />
+    </LinearLayout>
+    <LinearLayout   android:layout_alignParentRight="true"  style="@style/list_item_detail_lin" >
+    <TextView style="@style/list_item_today"  android:id="@+id/view_balance" />
+    <View android:layout_width="match_parent" android:layout_height="@dimen/space_1" android:background="#ababad"></View>
+    <TextView style="@style/list_item_today" android:text="@string/balance" android:textColor="@color/listitem_date" android:textSize="@dimen/text_size_16" android:layout_gravity="right"  />
+    </LinearLayout>
+</RelativeLayout>

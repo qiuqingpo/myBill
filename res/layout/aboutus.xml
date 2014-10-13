@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white" 
+    >
+       <TextView android:id="@+id/aboutustext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_22"
+        android:textColor="#ff333333"
+        android:padding="10dip"
+        android:text="@string/msg_aboutus">
+    </TextView>
+   <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/linquestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView style="@style/list_billtype_text"  android:text="@string/nickName" />
+        <EditText android:id="@id/nick_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"  android:inputType="text"></EditText>
+    </LinearLayout>
+     <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView style="@style/list_billtype_text"  android:text="@string/contactType" />
+        <Spinner android:layout_gravity="center" android:id="@id/contacttype" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="70.0dip" />
+        <EditText android:id="@id/contact_address" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"  android:inputType="text"></EditText>
+    </LinearLayout>
+    <EditText android:gravity="top" android:id="@id/question_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:hint="@string/question_msg" android:lines="8" android:maxLength="200" android:inputType="textMultiLine" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <Button android:id="@id/submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/submit" android:layout_weight="1.0" />
+        <Button android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/back" android:layout_weight="1.0" />
+    </LinearLayout>
+     </LinearLayout>
+     </ScrollView>
+</LinearLayout>

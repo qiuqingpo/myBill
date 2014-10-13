@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ <!--    <ExpandableListView  android:id="@+id/listdetails"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/list_view_today"
+        android:childDivider="@color/list_item_divider"
+     >
+    </ExpandableListView   > -->
+      <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        android:id="@+id/listdetails"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        style="@style/list_view_today"
+     />
+</LinearLayout>

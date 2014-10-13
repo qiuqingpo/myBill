@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        style="@style/guide_img_skin"
+        android:background="@drawable/guide_350_03" />
+    <Button
+        android:id="@+id/iv_start_mybill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/beginbill"
+        android:layout_marginBottom="78dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:textSize="@dimen/text_size_32"
+        android:textColor="@color/skin_guide_begin"
+        android:background="@drawable/blue_bg_selector" />  
+</RelativeLayout>

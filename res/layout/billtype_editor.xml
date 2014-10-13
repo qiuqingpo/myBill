@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/add_record" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white">
+ 
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10">
+        <TextView style="@style/list_billtype_text" android:text="@string/set_billfeetype" />
+         <RadioGroup android:id="@+id/radioGroup_feetype_id"  android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:layout_marginRight="@dimen/space_8" android:layout_marginLeft="@dimen/space_8" android:layout_marginTop="@dimen/space_3" android:layout_marginBottom="@dimen/space_3">
+         <RadioButton android:id="@+id/income_id" style="@style/list_billtype_tab"   android:tag="2"  android:text="@string/income"  android:background="@drawable/tab_left_selector"  /> 
+         <RadioButton  android:id="@+id/consume_id"  style="@style/list_billtype_tab"   android:tag="1"  android:text="@string/consume"  android:background="@drawable/tab_right_selector"  />
+         </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView style="@style/list_billtype_text" android:text="@string/set_billtype" />
+        <EditText android:id="@id/view_type" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"   android:singleLine="true" android:inputType="text"  android:imeOptions="actionDone" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <Button android:id="@id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/save" android:layout_weight="1.0" />
+        <Button android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/back" android:layout_weight="1.0" />
+    </LinearLayout>
+     <TextView android:id="@id/billtipmsg" android:textColor="@color/red" android:textSize="@dimen/text_size_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip"  />
+</LinearLayout>

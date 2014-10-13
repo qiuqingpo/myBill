@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="sel_type">
+        <item>按天统计</item>
+        <item>按周统计</item>
+        <item>按月统计</item>
+        <item>按年统计</item>
+    </string-array>
+    <string-array name="arrcontent">
+        <item>删除</item>
+    </string-array>
+     <string-array name="arrcontact">
+        <item>QQ</item>
+        <item>Email</item>
+    </string-array>
+</resources>

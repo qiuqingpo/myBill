@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="13dip"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingBottom="13dip"
+     >
+    <TextView style="@style/list_item_today" android:id="@id/view_time" android:layout_width="100.0dip"  android:layout_centerVertical="true" android:layout_alignParentLeft="true" />
+    <TextView style="@style/list_item_today" android:textColor="@color/listitem_money" android:textSize="@dimen/text_size_20"  android:id="@id/view_amount" android:layout_width="80.0dip" android:layout_toRightOf="@id/view_time" />
+    <TextView style="@style/list_item_today" android:textSize="@dimen/text_size_20" android:textColor="#ff000000"  android:id="@id/view_type" android:layout_width="70.0dip" android:layout_toRightOf="@id/view_amount"  />
+    <TextView style="@style/list_item_today" android:id="@id/view_desc" android:layout_width="fill_parent"   android:layout_alignParentRight="true" android:layout_toRightOf="@id/view_type"/>
+</RelativeLayout>

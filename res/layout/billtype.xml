@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ <ListView android:id="@+id/billtypelistview" android:layout_height="fill_parent"  style="@style/list_view_today" android:layout_above="@+id/lin_billtype_bottom" />
+    <LinearLayout android:id="@+id/lin_billtype_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/btn_billtype_selall" android:text="@string/menu_selectall" style="@style/list_billtype_bottom_btn" />
+        <Button android:id="@+id/btn_billtype_anti_election" android:text="@string/menu_anti_election" style="@style/list_billtype_bottom_btn" />
+        <Button android:id="@+id/btn_billtype_cancel" android:text="@string/menu_cancel" style="@style/list_billtype_bottom_btn" />
+        <Button android:enabled="false" android:id="@+id/btn_billtype_delete" android:text="@string/menu_delete" style="@style/list_billtype_bottom_btn" />
+    </LinearLayout>
+</RelativeLayout>

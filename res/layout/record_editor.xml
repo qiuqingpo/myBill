@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_gravity="center" android:orientation="vertical" android:id="@id/add_record" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:background="@color/white">
+      <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_10">
+        <TextView style="@style/list_billtype_text" android:text="@string/set_billfeetype" />
+         <RadioGroup android:id="@+id/radioGroup_feetype_id" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:layout_marginRight="@dimen/space_8" android:layout_marginTop="@dimen/space_3" android:layout_marginBottom="@dimen/space_3">
+         <RadioButton android:id="@+id/income_id" style="@style/list_billtype_tab"   android:tag="2"  android:text="@string/income"  android:background="@drawable/tab_left_selector"  /> 
+         <RadioButton android:id="@+id/consume_id"   style="@style/list_billtype_tab"  android:tag="1"  android:text="@string/consume"  android:background="@drawable/tab_right_selector"  />
+         </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView style="@style/list_billtype_text" android:text="@string/set_billtype" />
+        <Spinner android:layout_gravity="center" android:id="@id/consume_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="160.0dip" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/add_type" android:layout_width="wrap_content" android:layout_height="45.0dip" android:src="@drawable/btn_round_plus" android:contentDescription="@string/add_type_hint" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView style="@style/list_billtype_text" android:text="@string/set_billprice" />
+        <EditText android:id="@id/consume_amount" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:inputType="numberDecimal" android:digits="0123456789.+-*/"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+        <TextView style="@style/list_billtype_text" android:text="@string/set_billdate" />
+        <Button android:id="@id/show_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/show_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <EditText android:gravity="top" android:id="@id/consume_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:hint="@string/comsume_desc" android:lines="6" android:maxLength="50" android:inputType="textMultiLine"  android:imeOptions ="actionGo" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <Button android:id="@id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/save" android:layout_weight="1.0" />
+        <Button android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/back" android:layout_weight="1.0" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

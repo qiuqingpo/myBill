@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip"
+	>
+<LinearLayout
+    android:id="@+id/lin_footer_total"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    android:paddingTop="10dip">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_25"
+        android:textColor="@color/listitem_bottom"
+        android:text="@string/bill_total"/>
+     <TextView android:id="@+id/list_total_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textSize="@dimen/space_30"
+        android:textColor="@color/listitem_total"
+        />
+</LinearLayout>
+    <Button 
+            android:id="@+id/btn_addbill"
+            style="@style/add_bill_btn"
+            android:text="@string/addbill"
+     />
+</LinearLayout>

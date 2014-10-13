@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="5dip"
+     >
+    <RelativeLayout 
+    android:id="@+id/rel_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+     >
+    <LinearLayout android:id="@+id/detail_month_lin"  android:layout_alignParentLeft="true" style="@style/list_item_detail_lin">
+    <TextView style="@style/list_item_today" android:textSize="@dimen/text_size_20"  android:id="@id/view_time" android:layout_marginLeft="@dimen/space_5" android:textStyle="bold" />
+    <TextView style="@style/list_item_today" android:id="@+id/view_week" android:textColor="@color/listitem_date" android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+     <LinearLayout android:id="@+id/detail_income_lin"  android:layout_toRightOf="@+id/detail_month_lin"  style="@style/list_item_detail_lin" android:layout_width="80dip" android:layout_marginLeft="@dimen/space_15"  >
+    <TextView style="@style/list_item_today"   android:id="@id/view_feetype" android:textSize="@dimen/text_size_20" android:textStyle="bold" />
+    <TextView style="@style/list_item_today"  android:id="@id/view_type" android:textColor="@color/listitem_date" android:textSize="@dimen/text_size_16"  />
+    </LinearLayout>
+    <TextView style="@style/list_item_today"  android:id="@id/view_amount"  android:layout_marginRight="@dimen/space_5" android:layout_centerInParent="true" android:layout_alignParentRight="true" android:drawableRight="@drawable/set_jt" android:drawablePadding="@dimen/space_10" />
+    </RelativeLayout>
+    <TextView android:id="@+id/txt_child_empty" android:layout_gravity="center"  style="@style/list_item_today" android:text="@string/no_record"  android:drawableLeft="@drawable/common_lv_empty_tips" android:drawablePadding="@dimen/space_10" />
+<!--     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_margin="@dimen/space_5" android:background="@drawable/set_jt" android:contentDescription="@string/imageDescript" /> -->
+</LinearLayout>

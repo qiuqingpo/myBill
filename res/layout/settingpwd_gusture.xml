@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#334455" 
+    android:orientation="vertical" >
+    <LinearLayout    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lin_setdescript"
+    >
+      <TextView android:id="@+id/gusturepwd_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_gusturepwd" android:textSize="@dimen/text_size_25" android:layout_gravity="center" android:textColor="#FDFFFE" android:layout_marginTop="@dimen/space_10" android:layout_marginBottom="@dimen/space_5" />
+       <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:background="@drawable/ninepic" android:layout_gravity="center" android:layout_margin="@dimen/space_5"/>
+       <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_gusturepic" android:textSize="@dimen/text_size_20" android:layout_gravity="center" android:textColor="#59658D" android:layout_marginTop="@dimen/space_5"/>
+     </LinearLayout>
+       <com.qiuqp.mybill.common.LockView
+        android:id="@+id/lpv_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_setdescript"
+        />
+    <RelativeLayout    
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/lpv_lock"
+    android:layout_marginTop="@dimen/space_30"
+    android:layout_marginLeft="@dimen/space_30"
+    android:layout_marginRight="@dimen/space_30"
+    >
+    <TextView android:layout_width="wrap_content" android:id="@id/forgetpwd" android:layout_height="wrap_content" android:text="@string/forget_gusturepwd" android:textSize="@dimen/text_size_20"   android:textColor="#59658D"  /><TextView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back" android:textSize="@dimen/text_size_20"   android:textColor="#59658D" />
+</RelativeLayout>
+</RelativeLayout>

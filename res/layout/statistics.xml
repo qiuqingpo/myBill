@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout  android:id="@+id/head_tip" style="@style/head_tip" 
+         >
+    <Spinner android:id="@+id/Spinner_SelType"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+    </Spinner> 
+    </RelativeLayout>
+  <RelativeLayout android:id="@+id/menu_top" style="@style/menu_top" android:layout_below="@+id/head_tip"
+     >
+    <TextView style="@style/list_item_today" android:text="@string/menu_date"  android:layout_alignParentLeft="true"  />
+    <TextView style="@style/list_item_today" android:text="@string/menu_price" android:layout_alignParentRight="true"   />
+</RelativeLayout>
+<!--    <com.qiuqp.PullToRefreshListView android:id="@+id/liststatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/list_view_today"
+        android:layout_below="@+id/menu_top"
+     >
+        
+    </com.qiuqp.PullToRefreshListView> -->
+       <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/liststatistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/list_view_today"
+        android:layout_below="@+id/menu_top"
+     />
+</RelativeLayout>
